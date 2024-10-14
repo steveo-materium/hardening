@@ -1,7 +1,7 @@
 ### Hardening and pre-reqs script
 ##
 ###
-$path = 'c:\bin\
+$path = 'c:\bin\'
 
 Function InstallHardeningKitty() {
     $Version = (((Invoke-WebRequest "https://api.github.com/repos/scipag/HardeningKitty/releases/latest" -UseBasicParsing) | ConvertFrom-Json).Name).SubString(2)
