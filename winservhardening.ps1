@@ -27,7 +27,7 @@ InstallHardeningKitty
 Invoke-HardeningKitty -Mode Config -Report -ReportFile C:\bin\$env:COMPUTERNAME-$(get-date -format ddmmyy)-initialstate-hardening_report.csv
 ## Running CIS Windows Server User Settings
 Invoke-HardeningKitty -Mode HailMary -FileFindingList "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\lists\finding_list_cis_microsoft_windows_server_2022_22h2_2.0.0_machine.csv" -SkipRestorePoint
-C:\Program Files\WindowsPowerShell\Modules\HardeningKitty\0.9.2\lists
+
 ## Running CIS Windows Server Computer Settings
 Invoke-HardeningKitty -Mode HailMary -FileFindingList "$Env:ProgramFiles\WindowsPowerShell\Modules\HardeningKitty\$Version\lists\finding_list_cis_microsoft_windows_server_2022_22h2_2.0.0_user.csv" -SkipRestorePoint
 
